@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[markdown语法简介]]></title>
+    <url>%2F2018%2F07%2F12%2Fmarkdown%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[缘由 这是我第一次写博客文章，还是有些小激动的哈。从大二开始就是想搞个博客，然而因为种种原因，主要还是懒哈。 之前也建过一个博客是在阿里云申请了个免费的服务器，再用宝塔面板搭好了wordpress的环境，然后就没有然后了，坐等服务器过期后，就开始觉醒。这就是我后来用github和hexo来写博客的原因啦，毕竟免费，终身享用！ 主要是还是想通过博客约束自己，整理知识，提高自己的学习能力，在这里立个flag吧！ 或许咸鱼也可以翻身吧！ 正文 标题代码： 1234567891011# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题高阶标题（效果和一级标题一样）==========次阶标题（效果和二级标题一样）-------- 效果： 列表2.1 无序列表说明：* 可用 + 或 - 代替 代码： 123* 无序列表项1* 无序列表项2* 无序列表项3 效果： 2.2 有序列表 说明：只要有写数字，无论是否符合常理，有即合理！ 代码： 1231. 有序列表项12. 有序列表项24. 有序列表项3 效果： 分割线说明：一行中用三个以上的-,*,_可以建立分隔线效果一样，即使有空格间隔 代码： 1234---***___ 效果： 区块引用说明：引用可以用 &gt; , 跟标题一样 &gt; 表示 一级引用 ，&gt;&gt; 表示二级引用，依次类推！ 代码： 12345&gt;好句赏析&gt;* 人生若只如初见，何事秋风悲画扇&gt; &gt;这个引用至。。。&gt;* 人生若只如初见，只道当时是寻常&gt; &gt;这个引用至。。。 效果： 好句赏析 人生若只如初见，何事秋风悲画扇 这个引用至。。。 人生若只如初见，只道当时是寻常 这个引用至。。。 链接说明：链接有两种行内式和参数式，格式大同小异，其中链接标题可不写。 行内式 格式：[链接文字] (链接地址”链接标题”) 参数式 格式：[链接文字][参数] [参数]:链接地址”链接标题” 注意：[参数]前不能有字符位！ 代码： 123 [行内式百度链接](https://www.baidu.com&quot;百度&quot;) [参数式网易链接][var][var]:http://www.163.com&quot;网易&quot; 效果： 行内式百度链接 参数式网易链接 图片说明：图片与链接相似，也有两种方法，唯一不同只是前面加多个“!”，直接上代码！代码： 1234&lt;!--说明：![图片Alt](图片地址&quot;图片Title&quot;)--&gt;![源氏行内式网络图片](https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=955831500,3298646975&amp;fm=27&amp;gp=0.jpg&quot;源氏行内式网络图片&quot;)![源氏参数式相对路径图片][1][1]: /images/markdown语法简介/pictrue.png 效果： 代码框说明：单行用 “`“ ，多行用三个 “`“ , “`“ 一般位于”Tab”键上方！代码即效果： 我是一个单行代码框,我非常自卑 12我是一个多行代码框我非常骄傲 表格说明：表格采用的是” | “,” : “,” - “来组成边框，有点所画即所得注意：”:——“表示左对齐，其它类推代码： 12345姓名|性别|分数:------|:------:|------:寻欢|男|100小凤|男|100留香|男|100 效果： 姓名 性别 分数 寻欢 男 100 小凤 男 100 留香 男 100 强调说明：通过一个或者两个”*”或”_”包围实现代码： 123456原生字体*字体倾斜*_字体倾斜_**字体加粗**__字体加粗__~~字体删除~~ 效果：原生字体字体倾斜字体倾斜字体加粗字体加粗字体删除 转义说明：基本跟一般程序语言一样，在字符前直接加”\”代码： 123456\`\\\-\+\*\~ 效果：`\-+*~ 写在后面 这算是我真正的第一篇博客，虽然并不百分百原创，哈哈，继续加油！]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F07%2F10%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <categories>
-        <category>初</category>
+        <category>惊天之博文</category>
       </categories>
       <tags>
-        <tag>初</tag>
+        <tag>惊天之博文</tag>
       </tags>
   </entry>
 </search>
