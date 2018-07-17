@@ -8,5 +8,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://wavedanger.top/sitemap.xml
-Sitemap: https://wavedanger.top/baidusitemap.xml
+Sitemap: http://wavedanger.top/sitemap.xml
+Sitemap: http://wavedanger.top/baidusitemap.xml
