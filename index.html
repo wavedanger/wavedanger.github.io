@@ -326,7 +326,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/23/Git四个阶段的撤消更改/" itemprop="url">Git四个阶段的撤消更改</a></h2>
+                <a class="post-title-link" href="/2018/07/23/Git四个阶段的撤消更改/" itemprop="url">git四个阶段的撤消更改</a></h2>
         
 
         <div class="post-meta">
@@ -388,7 +388,7 @@
 
           
           
-             <span id="/2018/07/23/Git四个阶段的撤消更改/" class="leancloud_visitors" data-flag-title="Git四个阶段的撤消更改">
+             <span id="/2018/07/23/Git四个阶段的撤消更改/" class="leancloud_visitors" data-flag-title="git四个阶段的撤消更改">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -424,7 +424,7 @@
 <li><h5 id="基本概念——直角三角形"><a href="#基本概念——直角三角形" class="headerlink" title="基本概念——直角三角形"></a>基本概念——直角三角形</h5></li>
 </ol>
 <ul>
-<li>4个区<br><img src="/images/Git四个阶段的撤消更改/4.png" alt="4个区"><br>如上图所示，这里有四个区：<ul>
+<li>4个区<br><img src="/images/git四个阶段的撤消更改/4.png" alt="4个区"><br>如上图所示，这里有四个区：<ul>
 <li>工作区</li>
 <li>暂存区</li>
 <li>本地仓库</li>
@@ -433,7 +433,7 @@
 </li>
 </ul>
 <ul>
-<li>3个步骤<br><img src="/images/Git四个阶段的撤消更改/3.png" alt="3个步骤"><br><img src="/images/hexo配置404页面/404_2.png" alt="放置404.html"><br>如上图所示，三个步骤对应三个区：<ul>
+<li>3个步骤<br><img src="/images/git四个阶段的撤消更改/3.png" alt="3个步骤"><br>如上图所示，三个步骤对应三个区：<ul>
 <li>git add</li>
 <li>git commit -m “message”</li>
 <li>git push</li>
@@ -454,23 +454,23 @@
 <li><h5 id="检查修改"><a href="#检查修改" class="headerlink" title="检查修改"></a>检查修改</h5></li>
 </ol>
 <ul>
-<li>在这里我们给个例子来演示如何检查修改。<br><img src="/images/Git四个阶段的撤消更改/check1.png" alt="例子"><br>如上图所示，我们在D盘建了个仓库，并新建了readme.txt，内容为”git的四个撤消修改”。</li>
+<li>在这里我们给个例子来演示如何检查修改。<br><img src="/images/git四个阶段的撤消更改/check1.png" alt="例子"><br>如上图所示，我们在D盘建了个仓库，并新建了readme.txt，内容为”git的四个撤消修改”。</li>
 </ul>
 <ul>
 <li>已修改，未暂存<br>现在我们修改文本内容，在其后加上“学会了吗？”保存，运行<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff //显示修改差异</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="/images/Git四个阶段的撤消更改/check2.png" alt="例子"></p>
+<p><img src="/images/git四个阶段的撤消更改/check2.png" alt="例子"></p>
 <ul>
 <li>已暂存，未提交<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt//提交</span><br><span class="line">git diff//没反应</span><br><span class="line">git diff --cached//如下图，显示出暂存区与工作区之间的差异</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="/images/Git四个阶段的撤消更改/check3.png" alt="例子"></p>
+<p><img src="/images/git四个阶段的撤消更改/check3.png" alt="例子"></p>
 <ul>
 <li>已提交，未推送<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;modify readme.txt&quot;//提交修改</span><br><span class="line">git diff --cached//无变化</span><br><span class="line">git diff master origin/master//显示暂存区与本地仓库之间的差异</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="/images/Git四个阶段的撤消更改/check4.png" alt="例子"></p>
+<p><img src="/images/git四个阶段的撤消更改/check4.png" alt="例子"></p>
 <hr>
 <ol start="3">
 <li><h5 id="撤消修改"><a href="#撤消修改" class="headerlink" title="撤消修改"></a>撤消修改</h5>那么检查完修改，就来学下撤消吧。</li>
