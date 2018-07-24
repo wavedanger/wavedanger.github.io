@@ -80,24 +80,25 @@
 
 
 
-<meta name="description" content="前言 我们常常在沉迷于git提交时的一发入魂，但常常却事与愿违，这时就需要后悔药，下面请让我们带你们了解下配方及使用说明！   正文 基本概念——直角三角形   4个区 如上图所示，这里有四个区： 工作区 暂存区 本地仓库 远程仓库">
+<meta name="description" content="前言 我们常常在沉迷于git提交时的一发入魂，但常常却事与愿违，这时就需要后悔药，下面请让我们带你们了解下配方及使用说明！   正文 基本概念——直角三角形   4个区  如上图所示，这里有四个区： * 工作区 * 暂存区 * 本地仓库 * 远程仓库">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git四个阶段的撤消更改">
 <meta property="og:url" content="http://wavedanger.top/2018/07/23/git四个阶段的撤消更改/index.html">
 <meta property="og:site_name" content="浪险的博客">
-<meta property="og:description" content="前言 我们常常在沉迷于git提交时的一发入魂，但常常却事与愿违，这时就需要后悔药，下面请让我们带你们了解下配方及使用说明！   正文 基本概念——直角三角形   4个区 如上图所示，这里有四个区： 工作区 暂存区 本地仓库 远程仓库">
+<meta property="og:description" content="前言 我们常常在沉迷于git提交时的一发入魂，但常常却事与愿违，这时就需要后悔药，下面请让我们带你们了解下配方及使用说明！   正文 基本概念——直角三角形   4个区  如上图所示，这里有四个区： * 工作区 * 暂存区 * 本地仓库 * 远程仓库">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3789698065,4168400626&fm=27&gp=0.jpg">
+<meta property="og:image" content="http://wavedanger.top/images/markdown语法简介/title.png">
 <meta property="og:image" content="http://wavedanger.top/images/git四个阶段的撤消更改/3.png">
 <meta property="og:image" content="http://wavedanger.top/images/git四个阶段的撤消更改/check1.png">
 <meta property="og:image" content="http://wavedanger.top/images/git四个阶段的撤消更改/check2.png">
 <meta property="og:image" content="http://wavedanger.top/images/git四个阶段的撤消更改/check3.png">
 <meta property="og:image" content="http://wavedanger.top/images/git四个阶段的撤消更改/check4.png">
-<meta property="og:updated_time" content="2018-07-24T00:57:47.098Z">
+<meta property="og:updated_time" content="2018-07-24T01:02:40.456Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git四个阶段的撤消更改">
-<meta name="twitter:description" content="前言 我们常常在沉迷于git提交时的一发入魂，但常常却事与愿违，这时就需要后悔药，下面请让我们带你们了解下配方及使用说明！   正文 基本概念——直角三角形   4个区 如上图所示，这里有四个区： 工作区 暂存区 本地仓库 远程仓库">
+<meta name="twitter:description" content="前言 我们常常在沉迷于git提交时的一发入魂，但常常却事与愿违，这时就需要后悔药，下面请让我们带你们了解下配方及使用说明！   正文 基本概念——直角三角形   4个区  如上图所示，这里有四个区： * 工作区 * 暂存区 * 本地仓库 * 远程仓库">
 <meta name="twitter:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3789698065,4168400626&fm=27&gp=0.jpg">
 
 
@@ -428,25 +429,23 @@
 <li><h5 id="基本概念——直角三角形"><a href="#基本概念——直角三角形" class="headerlink" title="基本概念——直角三角形"></a>基本概念——直角三角形</h5></li>
 </ol>
 <ul>
-<li>4个区<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3789698065,4168400626&fm=27&gp=0.jpg" alt="四个区"><!-- ![4个区](/images/git四个阶段的撤消更改/4.png) -->
-如上图所示，这里有四个区：<ul>
-<li>工作区</li>
-<li>暂存区</li>
-<li>本地仓库</li>
-<li>远程仓库</li>
+<li>4个区<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3789698065,4168400626&fm=27&gp=0.jpg" alt="四个区"></li>
 </ul>
-</li>
-</ul>
-<a id="more"></a>
+<p><img src="/images/markdown语法简介/title.png" alt="标题效果图" width="50%"><br><!-- ![4个区](/images/git四个阶段的撤消更改/4.png) --><br>如上图所示，这里有四个区：</p>
+<pre><code>* 工作区
+* 暂存区
+* 本地仓库
+* 远程仓库
+</code></pre><a id="more"></a>
 <ul>
-<li>3个步骤<br><img src="/images/git四个阶段的撤消更改/3.png" alt="3个步骤"><br>如上图所示，三个步骤对应三个区：<ul>
-<li>git add</li>
-<li>git commit -m “message”</li>
-<li>git push</li>
+<li>3个步骤</li>
 </ul>
-</li>
-</ul>
-<ul>
+<p><img src="/images/git四个阶段的撤消更改/3.png" alt="3个步骤"></p>
+<p>如上图所示，三个步骤对应三个区：</p>
+<pre><code>* git add
+* git commit -m &quot;message&quot;
+* git push
+</code></pre><ul>
 <li>5种状态<ul>
 <li>未修改 ——原始状态</li>
 <li>已修改 ——已更改内容</li>
