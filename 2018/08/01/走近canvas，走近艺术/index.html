@@ -80,18 +80,18 @@
 
 
 
-<meta name="description" content="前言 canvas是画布，只要有想象力，没有什么不能画的！正文  1. 创建画布1&amp;lt;canvas width=&amp;quot;600&amp;quot; height=&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&amp;quot;canvas&amp;quot;);//获取画布var ct">
+<meta name="description" content="前言 canvas是画布，只要有想象力，没有什么不能画的！  正文1. 创建画布1&amp;lt;canvas width=&amp;quot;600&amp;quot; height=&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&amp;quot;canvas&amp;quot;);//获取画布var ct">
 <meta name="keywords" content="html5">
 <meta property="og:type" content="article">
 <meta property="og:title" content="走近canvas，走近艺术">
 <meta property="og:url" content="http://wavedanger.top/2018/08/01/走近canvas，走近艺术/index.html">
 <meta property="og:site_name" content="浪险的博客">
-<meta property="og:description" content="前言 canvas是画布，只要有想象力，没有什么不能画的！正文  1. 创建画布1&amp;lt;canvas width=&amp;quot;600&amp;quot; height=&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&amp;quot;canvas&amp;quot;);//获取画布var ct">
+<meta property="og:description" content="前言 canvas是画布，只要有想象力，没有什么不能画的！  正文1. 创建画布1&amp;lt;canvas width=&amp;quot;600&amp;quot; height=&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&amp;quot;canvas&amp;quot;);//获取画布var ct">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-01T09:31:08.996Z">
+<meta property="og:updated_time" content="2018-08-01T09:35:19.016Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="走近canvas，走近艺术">
-<meta name="twitter:description" content="前言 canvas是画布，只要有想象力，没有什么不能画的！正文  1. 创建画布1&amp;lt;canvas width=&amp;quot;600&amp;quot; height=&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&amp;quot;canvas&amp;quot;);//获取画布var ct">
+<meta name="twitter:description" content="前言 canvas是画布，只要有想象力，没有什么不能画的！  正文1. 创建画布1&amp;lt;canvas width=&amp;quot;600&amp;quot; height=&amp;quot;400&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&amp;quot;canvas&amp;quot;);//获取画布var ct">
 
 
 
@@ -414,10 +414,12 @@
 
       
         <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><ul>
-<li>canvas是画布，只要有想象力，没有什么不能画的！<h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4></li>
+<li>canvas是画布，只要有想象力，没有什么不能画的！</li>
 </ul>
-<h5 id="1-创建画布"><a href="#1-创建画布" class="headerlink" title="1. 创建画布"></a>1. 创建画布</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;//注意这里的宽高不能加px</span><br></pre></td></tr></table></figure>
+<h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><h5 id="1-创建画布"><a href="#1-创建画布" class="headerlink" title="1. 创建画布"></a>1. 创建画布</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;//注意这里的宽高不能加px</span><br></pre></td></tr></table></figure>
 <h5 id="2-作画准备"><a href="#2-作画准备" class="headerlink" title="2. 作画准备"></a>2. 作画准备</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var c=document.querySelector(&quot;canvas&quot;);//获取画布</span><br><span class="line">var ctx=c.getContext(&quot;2d&quot;);//2D作画</span><br></pre></td></tr></table></figure>
+<hr>
+<a id="more"></a>
 <h5 id="3-开始作画-直线"><a href="#3-开始作画-直线" class="headerlink" title="3. 开始作画-直线"></a>3. 开始作画-直线</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,100);//起点坐标</span><br><span class="line">ctx.lineTo(300,100);//终点坐标</span><br><span class="line">ctx.strokeStyle=&quot;red&quot;;//颜色</span><br><span class="line">ctx.lineWidth=&quot;10&quot;//粗度</span><br><span class="line">ctx.stroke();//作画</span><br></pre></td></tr></table></figure>
 <h5 id="4-开始作画-三角形"><a href="#4-开始作画-三角形" class="headerlink" title="4. 开始作画-三角形"></a>4. 开始作画-三角形</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,100);</span><br><span class="line">ctx.lineTo(500,400);</span><br><span class="line">ctx.lineTo(100,400);</span><br><span class="line">ctx.lineTo(100,100);</span><br><span class="line">      ctx.strokeStyle=&quot;blue&quot;;</span><br><span class="line">      ctx.lineWidth=10;</span><br><span class="line">      ctx.lineJoin=&quot;round&quot;//round bevel miter 连接处样式</span><br><span class="line">      ctx.lineCap=&quot;round&quot;//butt round square 头部样式</span><br><span class="line">      ctx.stroke();</span><br></pre></td></tr></table></figure>
 <h5 id="5-开始作画-矩形"><a href="#5-开始作画-矩形" class="headerlink" title="5. 开始作画-矩形"></a>5. 开始作画-矩形</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,100);</span><br><span class="line">ctx.lineTo(200,100);</span><br><span class="line">ctx.lineTo(200,200);</span><br><span class="line">ctx.lineTo(100,200);</span><br><span class="line">ctx.closePath();//最后补边，与ctx.lineTo(100,100);效果一样</span><br><span class="line">ctx.stroke();</span><br><span class="line">ctx.beginPath();//开始新路径，不加的话会与上面重叠影响</span><br><span class="line">ctx.fillStyle=&quot;green&quot;;</span><br><span class="line">      ctx.fillRect(100,100,100,100);//与上矩形相同,四个参数为：x,y,width,height</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
