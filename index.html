@@ -307,6 +307,342 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wavedanger.top/2018/08/01/走近canvas，走近艺术/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="浪险">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浪险的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/01/走近canvas，走近艺术/" itemprop="url">走近canvas，走近艺术</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-01T10:32:38+08:00">
+                2018-08-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/html5/" itemprop="url" rel="index">
+                    <span itemprop="name">html5</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/01/走近canvas，走近艺术/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/01/走近canvas，走近艺术/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/01/走近canvas，走近艺术/" class="leancloud_visitors" data-flag-title="走近canvas，走近艺术">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+         
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><ul>
+<li>canvas是画布，只要有想象力，没有什么不能画的！<h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4></li>
+</ul>
+<h5 id="1-创建画布"><a href="#1-创建画布" class="headerlink" title="1. 创建画布"></a>1. 创建画布</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;//注意这里的宽高不能加px</span><br></pre></td></tr></table></figure>
+<h5 id="2-作画准备"><a href="#2-作画准备" class="headerlink" title="2. 作画准备"></a>2. 作画准备</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var c=document.querySelector(&quot;canvas&quot;);//获取画布</span><br><span class="line">var ctx=c.getContext(&quot;2d&quot;);//2D作画</span><br></pre></td></tr></table></figure>
+<h5 id="3-开始作画-直线"><a href="#3-开始作画-直线" class="headerlink" title="3. 开始作画-直线"></a>3. 开始作画-直线</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,100);//起点坐标</span><br><span class="line">ctx.lineTo(300,100);//终点坐标</span><br><span class="line">ctx.strokeStyle=&quot;red&quot;;//颜色</span><br><span class="line">ctx.lineWidth=&quot;10&quot;//粗度</span><br><span class="line">ctx.stroke();//作画</span><br></pre></td></tr></table></figure>
+<h5 id="4-开始作画-三角形"><a href="#4-开始作画-三角形" class="headerlink" title="4. 开始作画-三角形"></a>4. 开始作画-三角形</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,100);</span><br><span class="line">ctx.lineTo(500,400);</span><br><span class="line">ctx.lineTo(100,400);</span><br><span class="line">ctx.lineTo(100,100);</span><br><span class="line">      ctx.strokeStyle=&quot;blue&quot;;</span><br><span class="line">      ctx.lineWidth=10;</span><br><span class="line">      ctx.lineJoin=&quot;round&quot;//round bevel miter 连接处样式</span><br><span class="line">      ctx.lineCap=&quot;round&quot;//butt round square 头部样式</span><br><span class="line">      ctx.stroke();</span><br></pre></td></tr></table></figure>
+<h5 id="5-开始作画-矩形"><a href="#5-开始作画-矩形" class="headerlink" title="5. 开始作画-矩形"></a>5. 开始作画-矩形</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,100);</span><br><span class="line">ctx.lineTo(200,100);</span><br><span class="line">ctx.lineTo(200,200);</span><br><span class="line">ctx.lineTo(100,200);</span><br><span class="line">ctx.closePath();//最后补边，与ctx.lineTo(100,100);效果一样</span><br><span class="line">ctx.stroke();</span><br><span class="line">ctx.beginPath();//开始新路径，不加的话会与上面重叠影响</span><br><span class="line">ctx.fillStyle=&quot;green&quot;;</span><br><span class="line">      ctx.fillRect(100,100,100,100);//与上矩形相同,四个参数为：x,y,width,height</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
+<h5 id="6-线性渐变"><a href="#6-线性渐变" class="headerlink" title="6. 线性渐变"></a>6. 线性渐变</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">      var lgd=ctx.createLinearGradient(100,100,500,100);//x,y,x2,y2渐变方向及长度</span><br><span class="line">lgd.addColorStop(0,&quot;red&quot;);//0为开始，1为结束，0到1之间渐变</span><br><span class="line">lgd.addColorStop(1,&quot;blue&quot;);</span><br><span class="line">ctx.strokeStyle=lgd;</span><br><span class="line">ctx.moveTo(100,100);</span><br><span class="line">ctx.lineTo(500,100);</span><br><span class="line">ctx.lineWidth=10;</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
+<h5 id="7-径向渐变"><a href="#7-径向渐变" class="headerlink" title="7. 径向渐变"></a>7. 径向渐变</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">      var rgd=ctx.createRadialGradient(200,150,20,200,150,100);//xStart, yStart, radiusStart, xEnd, yEnd, radiusEnd</span><br><span class="line">rgd.addColorStop(0,&quot;red&quot;);</span><br><span class="line">rgd.addColorStop(0.5,&quot;green&quot;);</span><br><span class="line">rgd.addColorStop(1,&quot;blue&quot;);</span><br><span class="line">ctx.fillStyle =rgd;//填充渐变</span><br><span class="line">ctx.fillRect(50,0,300,300);</span><br></pre></td></tr></table></figure>
+<h5 id="8-非零环绕"><a href="#8-非零环绕" class="headerlink" title="8. 非零环绕"></a>8. 非零环绕</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ctx.beginPath();</span><br><span class="line">ctx.moveTo(100,100);//逆时针画矩形</span><br><span class="line">ctx.lineTo(100,300);</span><br><span class="line">ctx.lineTo(300,300);</span><br><span class="line">ctx.lineTo(300,100);</span><br><span class="line">ctx.closePath();</span><br><span class="line"></span><br><span class="line">ctx.moveTo(150,150);//顺时针画矩形</span><br><span class="line">ctx.lineTo(250,150);</span><br><span class="line">ctx.lineTo(250,250);</span><br><span class="line">ctx.lineTo(150,250);</span><br><span class="line">ctx.closePath();</span><br><span class="line">ctx.stroke();</span><br><span class="line">ctx.fillStyle=&quot;red&quot;;//正反填充间隔</span><br><span class="line">ctx.fill();</span><br></pre></td></tr></table></figure>
+<h5 id="9-绘制虚线"><a href="#9-绘制虚线" class="headerlink" title="9. 绘制虚线"></a>9. 绘制虚线</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(100,50);</span><br><span class="line">ctx.lineTo(400,50);</span><br><span class="line">ctx.setLineDash([10,20]);//[&quot;-&quot;,&quot; &quot;]</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
+<h5 id="10-绘制文本"><a href="#10-绘制文本" class="headerlink" title="10. 绘制文本"></a>10. 绘制文本</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ctx.font=&quot;50px 全新硬笔行书简&quot;;</span><br><span class="line">ctx.textAlign=&quot;center&quot;;</span><br><span class="line">ctx.textBaseline=&quot;middle&quot;;</span><br><span class="line">ctx.shadowColor=&quot;red&quot;;</span><br><span class="line">ctx.shadowOffsetX=15;</span><br><span class="line">ctx.shadowOffsetY=5;</span><br><span class="line">ctx.shadowBlur=5;</span><br><span class="line">// ctx.strokeText(&quot;浪险&quot;,300,200);</span><br><span class="line">ctx.fillText(&quot;浪险&quot;,300,200);</span><br></pre></td></tr></table></figure>
+<h5 id="11-绘制图片"><a href="#11-绘制图片" class="headerlink" title="11. 绘制图片"></a>11. 绘制图片</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ctx.beginPath();</span><br><span class="line">var img=document.createElement(&quot;img&quot;);</span><br><span class="line">img.src=&quot;http://img5.imgtn.bdimg.com/it/u=415293130,2419074865&amp;fm=27&amp;gp=0.jpg&quot;;</span><br><span class="line">img.onload=function()&#123;</span><br><span class="line"></span><br><span class="line">	// ctx.drawImage(img,100,100,200,100);</span><br><span class="line">	ctx.drawImage(img,100,100,100,100,100,100,100,100);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="12-其它"><a href="#12-其它" class="headerlink" title="12. 其它"></a>12. 其它</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ctx.beginPath();</span><br><span class="line">ctx.translate(100,100);//画布偏移x,y</span><br><span class="line">ctx.rotate( Math.PI/6 );//旋转Math.PI/6</span><br><span class="line">ctx.scale(0.5,1);//缩放x,y倍</span><br><span class="line">ctx.arc(200,200,50,0,2*Math.PI,false);//画弧x,y,半径,startX,endX,方向</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></table></figure>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><ul>
+<li>哇，这篇写得赶，将就下！</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wavedanger.top/2018/08/01/html5的一些见解2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="浪险">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浪险的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/01/html5的一些见解2/" itemprop="url">html5的一些见解2</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-01T09:08:55+08:00">
+                2018-08-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/html5/" itemprop="url" rel="index">
+                    <span itemprop="name">html5</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/01/html5的一些见解2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/01/html5的一些见解2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/01/html5的一些见解2/" class="leancloud_visitors" data-flag-title="html5的一些见解2">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+         
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><h5 id="1-html5定位"><a href="#1-html5定位" class="headerlink" title="1. html5定位"></a>1. html5定位</h5><h5 id="2-本地存储"><a href="#2-本地存储" class="headerlink" title="2. 本地存储"></a>2. 本地存储</h5><ul>
+<li>sessionStorage</li>
+<li>localStorage</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://wavedanger.top/2018/07/27/html5的一些见解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1511,7 +1847,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

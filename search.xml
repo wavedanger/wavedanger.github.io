@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[走近canvas，走近艺术]]></title>
+    <url>%2F2018%2F08%2F01%2F%E8%B5%B0%E8%BF%91canvas%EF%BC%8C%E8%B5%B0%E8%BF%91%E8%89%BA%E6%9C%AF%2F</url>
+    <content type="text"><![CDATA[前言 canvas是画布，只要有想象力，没有什么不能画的！正文 1. 创建画布1&lt;canvas width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;//注意这里的宽高不能加px 2. 作画准备12var c=document.querySelector(&quot;canvas&quot;);//获取画布var ctx=c.getContext(&quot;2d&quot;);//2D作画 3. 开始作画-直线12345ctx.moveTo(100,100);//起点坐标ctx.lineTo(300,100);//终点坐标ctx.strokeStyle=&quot;red&quot;;//颜色ctx.lineWidth=&quot;10&quot;//粗度ctx.stroke();//作画 4. 开始作画-三角形123456789ctx.moveTo(100,100);ctx.lineTo(500,400);ctx.lineTo(100,400);ctx.lineTo(100,100); ctx.strokeStyle=&quot;blue&quot;; ctx.lineWidth=10; ctx.lineJoin=&quot;round&quot;//round bevel miter 连接处样式 ctx.lineCap=&quot;round&quot;//butt round square 头部样式 ctx.stroke(); 5. 开始作画-矩形12345678910ctx.moveTo(100,100);ctx.lineTo(200,100);ctx.lineTo(200,200);ctx.lineTo(100,200);ctx.closePath();//最后补边，与ctx.lineTo(100,100);效果一样ctx.stroke();ctx.beginPath();//开始新路径，不加的话会与上面重叠影响ctx.fillStyle=&quot;green&quot;; ctx.fillRect(100,100,100,100);//与上矩形相同,四个参数为：x,y,width,heightctx.stroke(); 6. 线性渐变12345678 var lgd=ctx.createLinearGradient(100,100,500,100);//x,y,x2,y2渐变方向及长度lgd.addColorStop(0,&quot;red&quot;);//0为开始，1为结束，0到1之间渐变lgd.addColorStop(1,&quot;blue&quot;);ctx.strokeStyle=lgd;ctx.moveTo(100,100);ctx.lineTo(500,100);ctx.lineWidth=10;ctx.stroke(); 7. 径向渐变123456 var rgd=ctx.createRadialGradient(200,150,20,200,150,100);//xStart, yStart, radiusStart, xEnd, yEnd, radiusEndrgd.addColorStop(0,&quot;red&quot;);rgd.addColorStop(0.5,&quot;green&quot;);rgd.addColorStop(1,&quot;blue&quot;);ctx.fillStyle =rgd;//填充渐变ctx.fillRect(50,0,300,300); 8. 非零环绕123456789101112131415ctx.beginPath();ctx.moveTo(100,100);//逆时针画矩形ctx.lineTo(100,300);ctx.lineTo(300,300);ctx.lineTo(300,100);ctx.closePath();ctx.moveTo(150,150);//顺时针画矩形ctx.lineTo(250,150);ctx.lineTo(250,250);ctx.lineTo(150,250);ctx.closePath();ctx.stroke();ctx.fillStyle=&quot;red&quot;;//正反填充间隔ctx.fill(); 9. 绘制虚线1234ctx.moveTo(100,50);ctx.lineTo(400,50);ctx.setLineDash([10,20]);//[&quot;-&quot;,&quot; &quot;]ctx.stroke(); 10. 绘制文本123456789ctx.font=&quot;50px 全新硬笔行书简&quot;;ctx.textAlign=&quot;center&quot;;ctx.textBaseline=&quot;middle&quot;;ctx.shadowColor=&quot;red&quot;;ctx.shadowOffsetX=15;ctx.shadowOffsetY=5;ctx.shadowBlur=5;// ctx.strokeText(&quot;浪险&quot;,300,200);ctx.fillText(&quot;浪险&quot;,300,200); 11. 绘制图片12345678ctx.beginPath();var img=document.createElement(&quot;img&quot;);img.src=&quot;http://img5.imgtn.bdimg.com/it/u=415293130,2419074865&amp;fm=27&amp;gp=0.jpg&quot;;img.onload=function()&#123; // ctx.drawImage(img,100,100,200,100); ctx.drawImage(img,100,100,100,100,100,100,100,100);&#125; 12. 其它123456ctx.beginPath();ctx.translate(100,100);//画布偏移x,yctx.rotate( Math.PI/6 );//旋转Math.PI/6ctx.scale(0.5,1);//缩放x,y倍ctx.arc(200,200,50,0,2*Math.PI,false);//画弧x,y,半径,startX,endX,方向ctx.stroke(); 后记 哇，这篇写得赶，将就下！]]></content>
+      <categories>
+        <category>html5</category>
+      </categories>
+      <tags>
+        <tag>html5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html5的一些见解2]]></title>
+    <url>%2F2018%2F08%2F01%2Fhtml5%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A32%2F</url>
+    <content type="text"><![CDATA[前言正文1. html5定位2. 本地存储 sessionStorage localStorage]]></content>
+      <categories>
+        <category>html5</category>
+      </categories>
+      <tags>
+        <tag>html5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[html5的一些见解]]></title>
     <url>%2F2018%2F07%2F27%2Fhtml5%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[前言 接触html5已经有一段时间了，但是学得比较零散，一直没有总结，那么接下来呢，来讲一下我的一些见解。 正文1. 解决IE8的不兼容html51234567891011//解决方式一//在该标签的css中设置该标签的display:block;&lt;style type=&quot;text/css&quot;&gt; header&#123; display:block;&#125;&lt;style&gt;//通过DOM的方式创建这个标签document.creatElement(&quot;header&quot;);&lt;script&gt; document.creatElement(&quot;header&quot;);&lt;/script&gt; 123456//解决方式二//引入外部html5shiv.js&lt;!-- [if lte IE 8] --&gt;&lt;script src=&quot;https://cdn.bootcss.com/html5shiv/r29/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif] --&gt;//直接使用&lt;header&gt;&lt;/header&gt;即可 2.解决audio,video谷歌浏览器无法自动播放12//解决方式：添加muted属性，但会禁音&lt;audio controls loop autoplay muted&gt;&lt;/audio&gt; 3. 自定义标签属性123456//设置自定义属性值：data-名字//获取自定义属性的值：dataset属性&lt;div data-name=&quot;wave&quot; id=&quot;dv&quot;&gt;&lt;div&gt;var dt=document.querySelector(&quot;#dv&quot;).dataset;console.log(dt.name);console.log(dt[&quot;name&quot;]); 4. 获取文件并显示12345678910111213141516171819//这里以图片为例，请随便上传一张图片&lt;div&gt; &lt;input type=&quot;file&quot; id=&quot;f1&quot;&gt; &lt;div id=&quot;show&quot;&gt;&lt;/div&gt; &lt;/div&gt; &lt;script&gt; var f1=document.querySelector(&quot;#f1&quot;);//获取上传对象 f1.onchange=function()&#123; var fl1=this.files[0];//获取上传文件 var fReader=new FileReader();//创建读取对象 fReader.readAsDataURL(fl1);//读取文件 fReader.onload=function()&#123; var img=document.createElement(&quot;img&quot;);//创建图片标签 var result=fReader.result;//获取结果 img.src=result;//获取路径 document.querySelector(&quot;#show&quot;).appendChild(img);//放到div上 &#125;; &#125; &lt;/script&gt; 5. 网络状态检测12345678910111213141516&lt;script type=&quot;text/javascript&quot;&gt; //html5网络状态检测 var state=window.navigator.onLine; if(state)&#123; console.log(&quot;在线的&quot;); &#125;else&#123; console.log(&quot;不在线&quot;); &#125; //连网没网分别立刻触发 window.ononline=function()&#123; console.log(&quot;连上了&quot;); &#125;; window.onoffline=function()&#123; console.log(&quot;掉线了&quot;); &#125;;&lt;/script&gt;]]></content>
