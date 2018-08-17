@@ -1,9 +1,11 @@
 /* 鼠标特效 */
 var a_idx = 0;
+var rgbM = "green";
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
-        var a = new Array("俺富强", "俺民主", "俺文明", "俺和谐", "俺自由", "俺平等", "俺公正" ,"俺法治", "俺爱国", "俺敬业", "俺诚信", "俺友善");
-        var $i = $("<span />").text(a[a_idx]);
+        var a = new Array("瓦富强", "瓦民主", "瓦文明", "瓦和谐", "瓦自由", "瓦平等", "瓦公正" ,"瓦法治", "瓦爱国", "瓦敬业", "瓦诚信", "瓦友善");
+        var rgbM='#'+Math.floor(Math.random()*0xffffff).toString(16);
+		var $i = $("<span />").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;
         var x = e.pageX,
         y = e.pageY;
@@ -13,7 +15,7 @@ jQuery(document).ready(function($) {
             "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": "#ff6651"
+            "color": rgbM
         });
         $("body").append($i);
         $i.animate({
