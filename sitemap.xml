@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wavedanger.top/categories/index.html</loc>
+    
+    <lastmod>2018-09-08T07:25:38.883Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wavedanger.top/2018/08/28/json%E5%B0%8F%E8%A7%81%E8%A7%A3/</loc>
     
     <lastmod>2018-08-29T07:26:10.387Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>http://wavedanger.top/tags/index.html</loc>
     
     <lastmod>2018-07-11T02:22:38.493Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wavedanger.top/categories/index.html</loc>
-    
-    <lastmod>2018-07-11T02:21:28.956Z</lastmod>
     
   </url>
   
