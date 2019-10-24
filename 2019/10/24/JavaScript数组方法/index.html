@@ -113,7 +113,7 @@
 
 
 
-  <meta name="keywords" content="html5," />
+  <meta name="keywords" content="javaScript," />
 
 
 
@@ -124,18 +124,18 @@
 
 
 
-<meta name="description" content="前言 目前这是篇死文，我也忘记我当初要写什么了！">
-<meta name="keywords" content="html5">
+<meta name="description" content="前言 一般对象都有{}=&amp;gt;Object.prototype 数组也一样[]=&amp;gt;Array.prototype 下面将简略介绍">
+<meta name="keywords" content="javaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html5的一些见解2">
-<meta property="og:url" content="http://wavedanger.top/2018/08/01/html5的一些见解2/index.html">
+<meta property="og:title" content="JavaScript数组方法">
+<meta property="og:url" content="http://wavedanger.top/2019/10/24/JavaScript数组方法/index.html">
 <meta property="og:site_name" content="浪险的博客">
-<meta property="og:description" content="前言 目前这是篇死文，我也忘记我当初要写什么了！">
+<meta property="og:description" content="前言 一般对象都有{}=&amp;gt;Object.prototype 数组也一样[]=&amp;gt;Array.prototype 下面将简略介绍">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-29T07:25:44.006Z">
+<meta property="og:updated_time" content="2019-10-24T03:24:23.502Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="html5的一些见解2">
-<meta name="twitter:description" content="前言 目前这是篇死文，我也忘记我当初要写什么了！">
+<meta name="twitter:title" content="JavaScript数组方法">
+<meta name="twitter:description" content="前言 一般对象都有{}=&amp;gt;Object.prototype 数组也一样[]=&amp;gt;Array.prototype 下面将简略介绍">
 
 
 
@@ -165,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="http://wavedanger.top/2018/08/01/html5的一些见解2/"/>
+  <link rel="canonical" href="http://wavedanger.top/2019/10/24/JavaScript数组方法/"/>
 
 
 
 
 
-  <title>html5的一些见解2 | 浪险的博客</title>
+  <title>JavaScript数组方法 | 浪险的博客</title>
   
 
 
@@ -351,7 +351,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wavedanger.top/2018/08/01/html5的一些见解2/">
+    <link itemprop="mainEntityOfPage" href="http://wavedanger.top/2019/10/24/JavaScript数组方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="浪险">
@@ -368,7 +368,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">html5的一些见解2</h2>
+          <h2 class="post-title" itemprop="name headline">JavaScript数组方法</h2>
         
 
         <div class="post-meta">
@@ -380,8 +380,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-01T09:08:55+08:00">
-                2018-08-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-24T10:08:27+08:00">
+                2019-10-24
               </time>
             
 
@@ -403,8 +403,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/html5/" itemprop="url" rel="index">
-                    <span itemprop="name">html5</span>
+                  <a href="/categories/javaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">javaScript</span>
                   </a>
                 </span>
 
@@ -421,8 +421,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/01/html5的一些见解2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/01/html5的一些见解2/" itemprop="commentCount"></span>
+                <a href="/2019/10/24/JavaScript数组方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/24/JavaScript数组方法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -430,7 +430,7 @@
 
           
           
-             <span id="/2018/08/01/html5的一些见解2/" class="leancloud_visitors" data-flag-title="html5的一些见解2">
+             <span id="/2019/10/24/JavaScript数组方法/" class="leancloud_visitors" data-flag-title="JavaScript数组方法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -457,13 +457,27 @@
 
       
         <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><ul>
-<li>目前这是篇死文，我也忘记我当初要写什么了！</li>
+<li>一般对象都有{}=&gt;Object.prototype</li>
+<li>数组也一样[]=&gt;Array.prototype</li>
+<li>下面将简略介绍<a id="more"></a>
+</li>
 </ul>
-<hr>
-<a id="more"></a>
-<h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><h5 id="1-html5定位"><a href="#1-html5定位" class="headerlink" title="1. html5定位"></a>1. html5定位</h5><h5 id="2-本地存储"><a href="#2-本地存储" class="headerlink" title="2. 本地存储"></a>2. 本地存储</h5><ul>
-<li>sessionStorage</li>
-<li>localStorage</li>
+<h4 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h4><h5 id="Array-prototype-join"><a href="#Array-prototype-join" class="headerlink" title="Array.prototype.join"></a>Array.prototype.join</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//将数组转为字符串</span><br><span class="line">var arr=[1,2,3]</span><br><span class="line">arr.join();//&quot;1,2,3&quot;</span><br><span class="line">arr.join(&quot;-&quot;);//&quot;1-2-3&quot;</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-reverse"><a href="#Array-prototype-reverse" class="headerlink" title="Array.prototype.reverse"></a>Array.prototype.reverse</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//将数组反转</span><br><span class="line">var arr=[1,2,3]</span><br><span class="line">arr.reverse();//[3,2,1]</span><br><span class="line">arr;//[3,2,1]//原数组会被修改</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-sort"><a href="#Array-prototype-sort" class="headerlink" title="Array.prototype.sort"></a>Array.prototype.sort</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//数组排序，一般需要重写</span><br><span class="line">var arr=[13,24,51,3];</span><br><span class="line">arr.sort();//[13,24,3,51]</span><br><span class="line">arr;//[13,24,3,51]//原数组会被修改</span><br><span class="line">arr.sort((a,b)=&gt;&#123;</span><br><span class="line">  return a-b</span><br><span class="line">&#125;)//升序[3,13,24,51]</span><br><span class="line">arr.sort((a,b)=&gt;&#123;</span><br><span class="line">  return b-a</span><br><span class="line">&#125;)//降序[51,24,13,3]</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-concat"><a href="#Array-prototype-concat" class="headerlink" title="Array.prototype.concat"></a>Array.prototype.concat</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//数组连接</span><br><span class="line">var arr=[1,2,3]</span><br><span class="line">arr.concat(4,5);//[1,2,3,4,5]</span><br><span class="line">arr.concat([6,7],8)//[1,2,3,6,7,8]</span><br><span class="line">arr;[1,2,3]//不会修改原数组</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-slice"><a href="#Array-prototype-slice" class="headerlink" title="Array.prototype.slice"></a>Array.prototype.slice</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">arr.slice(1,3);//[2,3]</span><br><span class="line">arr.slice(1);//[2,3,4,5]</span><br><span class="line">arr.slice(1,-1);//[2,3,4]-1表示从后面开始，表示最后一个</span><br><span class="line">arr;//[1,2,3,4,5]不修改原数组</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-splice"><a href="#Array-prototype-splice" class="headerlink" title="Array.prototype.splice"></a>Array.prototype.splice</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//拼接数组</span><br><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">arr.splice(2)//[3,4,5]</span><br><span class="line">arr;//[1,2]</span><br><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">arr.splice(2,2)//[3,4]</span><br><span class="line">arr;//[1,2,5]</span><br><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">arr.splice(1,1,&quot;a&quot;,&quot;b&quot;);//[2]</span><br><span class="line">arr;//[1,&quot;a&quot;,&quot;b&quot;,3,4,5]</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-forEach"><a href="#Array-prototype-forEach" class="headerlink" title="Array.prototype.forEach"></a>Array.prototype.forEach</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//数组遍历ie9+</span><br><span class="line">var arr=[1,2,3,4,5]</span><br><span class="line">arr.forEach((val,index.a)=&gt;&#123;</span><br><span class="line">  console.log(val+&quot;|&quot;+index+&quot;|&quot;+a===arr)</span><br><span class="line">&#125;)</span><br><span class="line">//1|0|true</span><br><span class="line">//2|1|true</span><br><span class="line">//3|2|true</span><br><span class="line">//4|3|true</span><br><span class="line">//5|4|true</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-map"><a href="#Array-prototype-map" class="headerlink" title="Array.prototype.map"></a>Array.prototype.map</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//数组映射</span><br><span class="line">var arr=[1,2,3];</span><br><span class="line">arr.map(x=&gt;x*x);//[1,4,9]</span><br><span class="line">arr;[1,2,3]//不修改原数组</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-filter"><a href="#Array-prototype-filter" class="headerlink" title="Array.prototype.filter"></a>Array.prototype.filter</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//数组过滤</span><br><span class="line">var arr=[1,2,3,4,5,6];</span><br><span class="line">arr.filter((val,index)=&gt;&#123;</span><br><span class="line">  return val&gt;=4;</span><br><span class="line">&#125;)//[4,5,6]</span><br><span class="line">arr;//不修改原数组</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-every-amp-some"><a href="#Array-prototype-every-amp-some" class="headerlink" title="Array.prototype.every&amp;some"></a>Array.prototype.every&amp;some</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//数组判断</span><br><span class="line">//every 全部要满足，类似于逻辑与</span><br><span class="line">//some 部分满足，类似于逻辑或</span><br><span class="line">var arr=[1,2,3,4,5]</span><br><span class="line">arr.every(x=&gt;x&lt;10)//true</span><br><span class="line">arr.every(x=&gt;x&lt;4)//false</span><br><span class="line">arr.some(x=&gt;x===2)//true</span><br><span class="line">arr.some(x=&gt;x===0)//false</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-reduce-amp-reduceRight"><a href="#Array-prototype-reduce-amp-reduceRight" class="headerlink" title="Array.prototype.reduce&amp;reduceRight"></a>Array.prototype.reduce&amp;reduceRight</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//数组项操作,reduce和reduceRight方向相反</span><br><span class="line">var arr=[1,2,3]</span><br><span class="line">var sum=arr.reduce((x,y)=&gt;&#123;</span><br><span class="line">  return x+y</span><br><span class="line">&#125;,0);//6</span><br><span class="line">arr;//[1,2,3]</span><br></pre></td></tr></table></figure>
+<h5 id="Array-prototype-indexOf-amp-lastIndexOf"><a href="#Array-prototype-indexOf-amp-lastIndexOf" class="headerlink" title="Array.prototype.indexOf&amp;lastIndexOf"></a>Array.prototype.indexOf&amp;lastIndexOf</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//数组检索</span><br><span class="line">var arr=[1,2,3,2,1]</span><br><span class="line">arr.indexOf(2);//1</span><br><span class="line">arr.indexOf(6);//-1</span><br><span class="line">arr.indexOf(1,1);//4</span><br><span class="line">arr.indexOf(1,-3);//4</span><br><span class="line">arr.lastIndexOf(2);//3</span><br><span class="line">arr.lastIndexOf(2,-2);//3</span><br></pre></td></tr></table></figure>
+<h5 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray"></a>Array.isArray</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//判断是否为数组</span><br><span class="line">Array.isArray([]);//true</span><br><span class="line">[].instanceOf Array;//true</span><br><span class="line">&#123;&#125;.toString.apply([])===&apos;[object Array]&apos;;//true</span><br><span class="line">[].constructor===Array;//true</span><br></pre></td></tr></table></figure>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<li>数组vs对象<br>相同：都可以继承，数组可以是对象，对象不一定是数组，都可以增删属性<br>不同：数组自动更新length，按索引访问数组通常比对象属性访问迅速，数组对象继承Array.prototype含有大量操作方法</li>
+<li>字符串vs数组<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var str=&apos;hello word&apos;</span><br><span class="line">str.charAt(0);//&apos;h&apos;</span><br><span class="line">str[1];//&apos;e&apos;</span><br><span class="line">Array.prototype.join.call(str,&apos;-&apos;);//&apos;h-e-l-l-o--w-o-r-d&apos;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -482,7 +496,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/html5/" rel="tag"># html5</a>
+            <a href="/tags/javaScript/" rel="tag"># javaScript</a>
           
         </div>
       
@@ -495,8 +509,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/27/html5的一些见解/" rel="next" title="html5的一些见解">
-                <i class="fa fa-chevron-left"></i> html5的一些见解
+              <a href="/2019/05/09/html5总结/" rel="next" title="html5总结">
+                <i class="fa fa-chevron-left"></i> html5总结
               </a>
             
           </div>
@@ -504,10 +518,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/01/走近canvas，走近艺术/" rel="prev" title="走近canvas，走近艺术">
-                走近canvas，走近艺术 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -664,7 +674,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-html5定位"><span class="nav-number">2.1.</span> <span class="nav-text">1. html5定位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-本地存储"><span class="nav-number">2.2.</span> <span class="nav-text">2. 本地存储</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组方法"><span class="nav-number">2.</span> <span class="nav-text">数组方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-join"><span class="nav-number">2.1.</span> <span class="nav-text">Array.prototype.join</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-reverse"><span class="nav-number">2.2.</span> <span class="nav-text">Array.prototype.reverse</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-sort"><span class="nav-number">2.3.</span> <span class="nav-text">Array.prototype.sort</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-concat"><span class="nav-number">2.4.</span> <span class="nav-text">Array.prototype.concat</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-slice"><span class="nav-number">2.5.</span> <span class="nav-text">Array.prototype.slice</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-splice"><span class="nav-number">2.6.</span> <span class="nav-text">Array.prototype.splice</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-forEach"><span class="nav-number">2.7.</span> <span class="nav-text">Array.prototype.forEach</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-map"><span class="nav-number">2.8.</span> <span class="nav-text">Array.prototype.map</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-filter"><span class="nav-number">2.9.</span> <span class="nav-text">Array.prototype.filter</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-every-amp-some"><span class="nav-number">2.10.</span> <span class="nav-text">Array.prototype.every&amp;some</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-reduce-amp-reduceRight"><span class="nav-number">2.11.</span> <span class="nav-text">Array.prototype.reduce&amp;reduceRight</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-prototype-indexOf-amp-lastIndexOf"><span class="nav-number">2.12.</span> <span class="nav-text">Array.prototype.indexOf&amp;lastIndexOf</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Array-isArray"><span class="nav-number">2.13.</span> <span class="nav-text">Array.isArray</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
