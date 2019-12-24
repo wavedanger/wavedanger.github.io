@@ -5,4 +5,5 @@ welcome to my blog!
   <summary>好想爱这个世界啊</summary>
   
   [原唱](https://www.bilibili.com/video/av78067912/)
-</details>[日文版](https://m.bilibili.com/audio/au1212855)
+[日文版](https://m.bilibili.com/audio/au1212855)
+</details>
