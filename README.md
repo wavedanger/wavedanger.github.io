@@ -63,3 +63,17 @@ welcome to my blog!
   
 [温柔](https://music.163.com/#/song?id=386538)
 </details>
+<details>
+  <summary>20200219，分享一件事</summary>
+  
+* 谨慎使用git reset --hard
+  * 由于我在使用以上命令时，就是我一个项目的readme，是没有push、commit、add，仅仅只是ctrl+s
+  * 然后我执行的git reset hard
+  * 再打开vscode时想写readme时，一片茫然！
+  * 之前那么多个分支我都没有提交，想到最后才提交，没想到啊
+  * 抱着尝试的忐忑心理我打开了google：commit的可以恢复，add可以恢复。。。完了！
+  * 是的，没想到啊，我一个ctrl+z就让我活了过来
+  * 是这样的，vscode的readme选项卡我没有关掉
+  * 众所周知，编辑器都有缓存，即使全部清空，也可以撤消！
+  * 最后，还是要谨慎使用这条命令，幸好这次幸运，要不然就，哈哈！
+</details>
