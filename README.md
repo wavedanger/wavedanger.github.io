@@ -92,3 +92,8 @@ welcome to my blog!
  
  [念念不忘](https://music.163.com/#/song?id=481535136)
 </details>
+<details>
+  <summary>20200303，自信来源于不断的深入学习</summary>
+ 
+ [我的身旁是一扇亮了又暗的窗](https://music.163.com/#/song?id=1294899223)
+</details>
