@@ -14,7 +14,9 @@ welcome to my blog!
 [给自己的信](https://music.163.com/#/song?id=456175578)
 </details>
 <details>
-  <summary>20190110，虽说最近不怎么样，还是改掉了些坏毛病！</summary>
+  <summary>2020上</summary>
+    <details>
+  <summary>20200110，虽说最近不怎么样，还是改掉了些坏毛病！</summary>
   
 [世间美好与你环环相扣](https://music.163.com/#/song?id=1363948882)
 </details>
@@ -23,9 +25,7 @@ welcome to my blog!
   
 [还好一切都来得及](https://music.163.com/#/song?id=1302609393)
 </details>
-<details>
-  <summary>202002</summary>
-  <details>
+    <details>
   <summary>20200201，坚持！</summary>
   
 [我们别时和见时不同](https://music.163.com/#/song?id=863464857)
@@ -94,7 +94,6 @@ welcome to my blog!
  
  [念念不忘](https://music.163.com/#/song?id=481535136)
 </details>
-</details>
 <details>
   <summary>20200303，自信来源于不断的深入学习</summary>
  
@@ -129,4 +128,5 @@ welcome to my blog!
   <summary>20200418，域名过期了呢</summary>
  
  [迷途的羔羊](https://music.163.com/#/song?id=1336866159)
+</details>
 </details>
